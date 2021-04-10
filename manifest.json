@@ -1,0 +1,22 @@
+{
+    "name": "QuizRead",
+    "description": "An extension which quizzes readers on complex and difficult words within a text",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ],
+    "permissions": ["storage", "activeTab", "declarativeContent"],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "128": "/images/temporary_icon.png"
+        }
+    }
+}
