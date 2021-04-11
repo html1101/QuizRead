@@ -18,5 +18,11 @@
         "default_icon": {
             "128": "/images/temporary_icon.png"
         }
-    }
+    },
+    "web_accessible_resources": [
+        {
+        "resources": [ "html1101/4be0624215ffa1465c6c29ef4a28b45c/raw/8e25347ddb349f701fed219b2778f7b27e44c207/lexicon.tsv"],
+        "matches": [ "https://gist.githubusercontent.com/*", "https://api.dictionaryapi.dev/api/v2/entries/en_US/*"]
+        }
+    ]
 }

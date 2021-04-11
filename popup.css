@@ -1,4 +1,223 @@
+body {
+    width:760px;
+    --height-top-bar: 5em;
+    --width-side-bar: 15vw;
+}
+#top_bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffa600;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    left: 0;
+    width: 100%;
+    height: var(--height-top-bar);
+}
+#group {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--width-side-bar) !important;
+    height: var(--height-top-bar);
+    float: left !important;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 0;
+}
+#groupA {
+    margin-top: 1.5em;
+}
+a.top_icon {
+    display: block;
+    color: white;
+    width: 4em;
+    float: right;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.25s;
+}
+a.top_icon:hover:not(.active) {
+    background-color: #7c7c7c;
+    height: var(--height-top-bar);
+    transition: 0.25s;
+}
+#side_bar {
+    list-style-type: none;
+    margin: 0;
+    margin-top: var(--height-top-bar);
+    padding: 0;
+    width: var(--width-side-bar);
+    background-color: #575757;
+    position: fixed;
+    height: calc(100% - var(--height-top-bar));
+    overflow: auto;
+    top: 0;
+    left: 0;
+    padding: 0 0;
+    z-index: 1;
+}
+a.side_icon {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+a.side_icon {
+    position: relative;
+    background-color: #575757;
+    height: 2.5em;
+    margin-top: 1em;
+    margin-bottom: 5em;
+    padding-top: 0.625em;
+    color: white;
+    text-align: center;
+}
+
+#profile_pic {
+    width: 150px;
+    height: 100px;
+}
+#name {
+    color: #575757;
+    font-size: 40px;
+}
+#username {
+    color: #ffa600;
+    font-size: 20px;
+}
+#books_reading {
+    color: #7c7c7c;
+    font-size: 30px;
+}
+#books_1_4 {
+    color: #ffa600;
+    font-size: 15px;
+}
+
 #picture {
     width: 100px;
     height: 100px;
+}
+i {
+    font-size: 30px;
+}
+#move_up {
+    margin-top: 5em;
+    margin-left: 35vw;
+    position: absolute;
+    color: #7c7c7c;
+    font-size: 17px;
+}
+
+#number_of_words {
+    color: #575757;
+    font-size: 30px;
+}
+#learned_word_1, #learned_word_2, #learned_word_3, #learned_word_4 {
+    color:#7c7c7c;
+    font-size: 15px;
+}
+.right_column {
+    position: relative;
+    text-align: right;
+    top: -1.2em;
+    margin-top: -1.2em;
+    color: #ffa600;
+    font-size: 15px;
+}
+
+
+
+#level_image {
+    width: 40px;
+    height: 40px;
+}
+#abc {
+    font-size: 25px;
+    color: white;
+    font-weight: 900;
+    margin-top: -0.125em;
+}
+#book_specific_quizzes {
+    display: none;
+}
+#quiz_page {
+    display: none;
+}
+#Search {
+    color: #575757;
+    font-size: 30px;
+}
+#Title_Author {
+    width: 400px;
+    height: 30px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+#Group_Code {
+    color: #575757;
+    font-size: 30px;
+}
+#Enter_Join_Code {
+    width: 400px;
+    height: 30px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+#book_list_title {
+    color: #575757;
+    font-size: 30px;
+}
+#your_book_1 {
+    color: #7c7c7c;
+    font-size: 20px;
+    border: 2px solid #ffa600;
+}
+#your_book_2 {
+    color: #7c7c7c;
+    font-size: 20px;
+    border: 2px solid #ffa600;
+}
+#your_book_3 {
+    color: #7c7c7c;
+    font-size: 20px;
+    border: 2px solid #ffa600;
+}
+#your_book_4 {
+    color: #7c7c7c;
+    font-size: 20px;
+    border: 2px solid #ffa600;
+}
+#message_newest {
+    width: 100vw;
+    color: #7c7c7c;
+    font-size: 15px;
+    /* margin-left: -98.7px;
+    margin-bottom: -14px;
+    border-top: 2px solid #ffa600;
+    border-bottom: 2px solid #ffa600; */
+}
+#message_middle {
+    width: 100vw;
+    color: #7c7c7c;
+    font-size: 15px;
+    /* margin-left: -98.7px;
+    margin-bottom: -14px;
+    border-top: 2px solid #ffa600;
+    border-bottom: 2px solid #ffa600; */
+}
+#message_oldest {
+    width: 100vw;
+    color: #7c7c7c;
+    font-size: 15px;
+    /*margin-left: -98.7px;
+    margin-bottom: -14px;
+    border-top: 2px solid #ffa600;
+    border-bottom: 2px solid #ffa600;*/
 }

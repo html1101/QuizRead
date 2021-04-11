@@ -2,24 +2,113 @@
 <html>
     <head>
         <link rel="stylesheet" href="popup.css">
+        <script src="font_awesome.js"></script>
     </head>
     <body>
-        <div id="quiz_page">
-            <div id="top_bar">
-                <div id="option_join">Join Group</div>
-                <div id="level" class="icon"></div>
-                <div id="notifications" class="icon"></div>
-                <div id="profile" class="icon"></div>
-            </div>
-            <div id="side_bar">
-                <div id="choose_book" class="side_icon"></div>
-                <div id="progress_dashboard" class="side icon"></div>
-                <div id="words_learned" class="side_icon"></div>
-            </div>
-            <div id="multiple_choice">
-                <h3 id="book_title">Book Title</h3>
-                <img src="images/temporary_icon.png" alt="Picture of Word" id="picture">
+        <div id="top_bar">
+            <a class="top_icon" id="group"><div id="groupA"><b>Join Group</b></div></a>
+            <a class="top_icon" id="home"><i class="fas fa-home"></i></a>
+            <a class="top_icon" id="user"><i class="fas fa-user-circle"></i></a>
+            <a class="top_icon" id="bell"><i class="fas fa-bell"></i></a>
+            <a class="top_icon" id="crown"><i class="fas fa-crown"></i></a>
+        </div>
+        <div id="side_bar">
+            <a class="side_icon" id="your_books"><i class="fas fa-book-open"></i></a>
+            <a class="side_icon" id="progress_dashboard"><i class="fas fa-chart-bar"></i></a>
+            <a class="side_icon" id="words_learned"><div id="abc">ABC</div></a>
+        </div>
+        <div style="padding:20px;margin-top:30px;background-color:#ffffff;min-height: 700px;">
+            <div style="margin-left:25%;padding:1px 16px;">
+                <div id="home_choose_book">
+                    <div id="Search"><h1>Search</h1></div>
+                    <div class="booknav">
+                        <input type="text" id="Title_Author" placeholder="Title/Author">
+                    </div>
+                </div>
+                <div id="join_group_page">
+                    <div id="Group_Code"><h1>Join Group</h1></div>
+                    <div class="booknav">
+                        <input type="text" id="Enter_Join_Code" placeholder="Enter Join Code">
+                    </div>
+                </div>
+                <div id="your_books_page">
+                    <div id="book_list_title"><h1>Your Books</h1></div>
+                        <p id="your_book_1">Book 1</p>
+                        <p id="your_book_2">Book 2</p>
+                        <p id="your_book_3">Book 3</p>
+                        <p id="your_book_4">Book 4</p>
+                </div>
+                <div id="profile_page">
+                    <div id="move_up">
+                        <h4 id ="level">Level---#</h4>
+                        <!-- <p id="profile_level">#</p> -->
+                        <br>
+                        <h4 id ="day_streak">Streak---# Days</h4>
+                        <!-- <p id="number_of_days"># Days</p> -->
+                        <br>
+                        <h4 id="group_heading">Group---Group Name</h4>
+                        <!-- <p id="group_name">Group Name</p> -->
+                    </div>
+                    <img src="images/temporary_icon.png" alt="Profile Picture" id="profile_pic">
+                    <h3 id="name">Name</h3>
+                    <p id="username">username</p>
+                    <h4 id="books_reading">Books</h4>
+                    <div id="books_1_4">
+                        <p id="book_1">Book 1 --- #%</p><hr>
+                        <p id="book_2">Book 2 --- #%</p><hr>
+                        <p id="book_3">Book 3 --- #%</p><hr>
+                        <p id="book_4">Book 4 --- #%</p><hr>
+                    </div>
+                </div>
+                <div id="book_specific_quizzes"> <!--not yet referenced by button-->
+                    <h3 id="book_title">Book Title</h3>
+                    <h4 id="quizzes">Quizzes</h4>
+                    <p id="level_1">Level 1</p>
+                    <p id="level_2">Level 2</p>
+                    <p id="level_3">Level 3</p>
+                    <p id="level_4">Level 4</p>
+                </div>
+                <div id="quiz_page"> <!--not yet referenced by button-->
+                    <h3 id="book_title_level">Book Title-Level 1</h3>
+                    <p id="definition">word definition</p>
+                    <img src="images/temporary_icon.png" alt="Picture of Word" id="picture">
+                    <p id="option_a">a. word 1</p>
+                    <p id="option_b">b. word 2</p>
+                    <p id="option_c">c. word 3</p>
+                    <p id="option_d">d. word 4</p>
+                    <p id="status_in_quiz">#/15</p>
+                </div>
+                <div id="Notifications">
+                    <hr><div id="message_newest">Newest Message</div><hr>
+                    <div id="message_middle">Middle Messages</div><hr>
+                    <div id="message_oldest">Oldest Message</div><hr>
+                </div>
+                <div id="level_page">
+                    <h3 id="level_#">Level #</h3>
+                    <img src="images/temporary_icon.png" alt="Level Image" id="level_image">
+                    <p id="progress_bar">Insert Progress Bar Here</p>
+                </div>
+                <div id="words_learned_page">
+                    <h3 id="number_of_words"># Words Learned!</h3>
+                    <div id="column_words_review">
+                        <p id="learned_word_1">Word 1</p><p id="review_1" class="right_column">Review</p><hr>
+                        <p id="learned_word_2">Word 2</p><p id="review_1" class="right_column">Review</p><hr>
+                        <p id="learned_word_3">Word 3</p><p id="review_1" class="right_column">Review</p><hr>
+                        <p id="learned_word_4">Word 4</p><p id="review_1" class="right_column">Review</p><hr>
+                    </div>
+                    <!-- <div id="right_column_review">
+                        <p id="review_1">Review</p><hr>
+                        <p id="review_2">Review</p><hr>
+                        <p id="review_3">Review</p><hr>
+                        <p id="review_4">Review</p><hr>
+                    </div> -->
+                </div>
+                <div id="progress_dash">
+                    <p id="quiz_scores">Insert Quiz Bars and Dates Here</p>
+                    <h4 id="progress_dash_title">Score by Date</h4>
+                </div>
             </div>
         </div>
+        <script src="popup.js"></script>
     </body>
 </html>
