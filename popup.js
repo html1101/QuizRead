@@ -32,11 +32,21 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 })
 
 
+/**
+ * ,
+    "web_accessible_resources": [
+        {
+        "resources": [ "html1101/4be0624215ffa1465c6c29ef4a28b45c/raw/8e25347ddb349f701fed219b2778f7b27e44c207/lexicon.tsv"],
+        "matches": [ "https://gist.githubusercontent.com/*", "https://api.dictionaryapi.dev/api/v2/entries/en_US/*"]
+        }
+    ]
+ */
+/*
 // Waits for when 
 chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
     chrome.tabs.sendMessage(tabs[0].id, {type:"getPrettified"}, function(response){
-        document.body.innerHTML = tabs[0].id
-        document.body.innerHTML += JSON.stringify(response)
+        // document.body.innerHTML = tabs[0].id
+        // document.body.innerHTML += JSON.stringify(response)
     })
 })
 
@@ -133,3 +143,4 @@ function shuffle(array) {
       document.getElementById("lvlR").value = lvl_to_use
       updateQuestions(lvl_to_use);
   });
+*/
