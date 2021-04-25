@@ -17,7 +17,7 @@
             <a class="side_icon" id="progress_dashboard"><i class="fas fa-chart-bar"></i></a>
             <a class="side_icon" id="words_learned"><div id="abc">ABC</div></a>
         </div>
-        <div style="padding:20px;margin-top:30px;background-color:#ffffff;min-height: 700px;">
+        <div style="padding:20px;margin-top:30px;min-height: 700px;">
             <div style="margin-left:25%;padding:1px 16px;">
                 <div id="home_choose_book">
                     <div id="Search"><h1>Search</h1></div>
@@ -60,14 +60,14 @@
                         <p id="book_4">Book 4 --- #%</p><hr>
                     </div>
                 </div>
-                <div id="book_specific_quizzes"> <!--not yet referenced by button-->
+                <!-- <div id="book_specific_quizzes"> not yet referenced by button
                     <h3 id="book_title">Book Title</h3>
                     <h4 id="quizzes">Quizzes</h4>
                     <p id="level_1">Level 1</p>
                     <p id="level_2">Level 2</p>
                     <p id="level_3">Level 3</p>
                     <p id="level_4">Level 4</p>
-                </div>
+                </div> -->
                 <div id="quiz_page"> <!--not yet referenced by button-->
                     <h3 id="book_title_level">Book Title-Level 1</h3>
                     <p id="definition">word definition</p>
@@ -77,6 +77,11 @@
                     <p id="option_c">c. word 3</p>
                     <p id="option_d">d. word 4</p>
                     <p id="status_in_quiz">#/15</p>
+                    <div id="book_specific_quizzes"> <!--not yet referenced by button-->
+                        <h3 id="book_title">Book Title</h3>
+                        <h4 id="quizzes">Quizzes</h4>
+                        <input type="range" min="1" max="4" id="lvlR"> <div id="lvl">Level 1</div>
+                    </div>
                 </div>
                 <div id="Notifications">
                     <hr><div id="message_newest">Newest Message</div><hr>
@@ -87,6 +92,9 @@
                     <h3 id="level_#">Level #</h3>
                     <img src="images/temporary_icon.png" alt="Level Image" id="level_image">
                     <p id="progress_bar">Insert Progress Bar Here</p>
+                    <div class="progress_slider"> 
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    </div>
                 </div>
                 <div id="words_learned_page">
                     <h3 id="number_of_words"># Words Learned!</h3>
@@ -109,11 +117,6 @@
                 </div>
             </div>
         </div>
-        <!-- <div id="book_specific_quizzes"> not yet referenced by button
-            <h3 id="book_title">Book Title</h3>
-            <h4 id="quizzes">Quizzes</h4>
-            <input type="range" min="1" max="4" id="lvlR"> <div id="lvl">Level 1</div>
-        </div> -->
         <script src="popup.js"></script>
     </body>
 </html>

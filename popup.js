@@ -6,7 +6,7 @@ const associate = [
     ["bell", "Notifications"],
     ["user", "profile_page"],
     ["home", "home_choose_book"],
-    ["groupA", "join_group_page"]
+    ["group", "join_group_page"]
 ]
 
 threshold_complexity = 3 // Anything at or above this complexity we test for
@@ -41,7 +41,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
         }
     ]
  */
-/*
+
 // Waits for when 
 chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
     chrome.tabs.sendMessage(tabs[0].id, {type:"getPrettified"}, function(response){
@@ -143,4 +143,3 @@ function shuffle(array) {
       document.getElementById("lvlR").value = lvl_to_use
       updateQuestions(lvl_to_use);
   });
-*/
